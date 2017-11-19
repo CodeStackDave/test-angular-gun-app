@@ -3,10 +3,9 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import Gun from 'gun/gun';
 
-import { GunDb } from './gun.service';
-import { on$ } from './gun.helper';
+import { GunDb } from '../gun.service';
+import { on$ } from '../gun.helper';
 
-import { Component } from '@angular/core';
 
 @Component({
     templateUrl: './app.order.html'
@@ -42,3 +41,4 @@ export class OrderListComponent implements OnInit {
   unsub() {
     this.todosSub.unsubscribe();
   }
+}

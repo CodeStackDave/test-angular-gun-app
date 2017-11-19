@@ -1,5 +1,6 @@
 <div>
 <form (ngSubmit)="add()">
+  <label>Order 100</label>
   <input type="text" [(ngModel)]="newTodo" name="newTodo" placeholder="New Items">
   <button type="submit" *ngIf="newTodo" [disabled]="newTodo?.trim().length === 0">Add</button>
 </form>

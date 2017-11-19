@@ -7,20 +7,17 @@ import { NgPipesModule } from 'ngx-pipes';
 import { AppComponent } from './app.component';
 import { GunDb } from './gun.service';
 import { RouterModule, Routes } from '@angular/router';
-
+import { OrderListComponent } from './order/order.component';
 
 
 const appRoutes: Routes = [
-    {
-        path: '',
-        redirectTo: '/TestView',
-        pathMatch: 'full'
-    }
+    { path: 'new-order', component: OrderListComponent },
 ];
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        OrderListComponent
     ],
     imports: [
         BrowserModule,
